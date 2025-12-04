@@ -32,7 +32,6 @@ public class operations {
             max=list.get(i);
         }
        }
-       //swap two numbers
        
 
     }
