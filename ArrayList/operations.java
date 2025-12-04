@@ -8,6 +8,8 @@ public class operations {
         list.add(1); 
         list.add(2);
         list.add(3);
+        list.add(32) ;
+        list.add(12); 
         System.out.println(list);
         //get
         System.out.println(list.get(0));
@@ -30,6 +32,9 @@ public class operations {
             max=list.get(i);
         }
        }
+       //swap two numbers
+       
+
     }
 
 }
