@@ -34,14 +34,14 @@ public class LinkedList {
     }
     public void print(){
         if(head==null){
-            System.out.println("Linked List is empty");
+            System.out.print("Linked List is empty");
             return;
         }
         Node temp=head; 
         while(temp!=null){
-            System.out.println(""+temp.data);
+            System.out.print(temp.data+"->");
             temp=temp.next;
-            
+
         }
     }
 
@@ -50,6 +50,8 @@ public class LinkedList {
         ll.addFirst(10);
         ll.addFirst(20);
         ll.addFirst(30);
+        ll.addLast(40);
+        ll.print();
         
     }   
 
