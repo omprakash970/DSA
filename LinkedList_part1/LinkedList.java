@@ -32,6 +32,18 @@ public class LinkedList {
         tail.next=newNode;
         tail=newNode;
     }
+    public void print(){
+        if(head==null){
+            System.out.println("Linked List is empty");
+            return;
+        }
+        Node temp=head; 
+        while(temp!=null){
+            System.out.println(""+temp.data);
+            temp=temp.next;
+            
+        }
+    }
 
     public static void main(String[] args) {
      LinkedList ll=new LinkedList();
