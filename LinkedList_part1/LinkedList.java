@@ -44,6 +44,21 @@ public class LinkedList {
 
         }
     }
+    public void add(int index, int data){
+        Node newNode=new Node(data); 
+        if(index==0){
+            addFirst(data);
+            return;
+        }
+        Node temp=head; 
+        for(int i=0;i<index-1; i++){
+            temp=temp.next; 
+        }
+        newNode.next=temp.next;
+        temp.next=newNode;
+        
+
+    }
 
     public static void main(String[] args) {
      LinkedList ll=new LinkedList();
@@ -53,7 +68,7 @@ public class LinkedList {
         ll.addLast(40);
         ll.print();
 
-        
+
         
     }   
 
