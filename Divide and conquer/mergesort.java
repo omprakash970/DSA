@@ -6,8 +6,8 @@ public class mergesort {
             return; 
         }
         int mid=(si+ei)/2;
-        merge_sort(arr[], si, mid);
-        merge_sort(arr[], mid+1, ei);
+        mergesort(arr, si, mid);
+        mergesort(arr, mid+1, ei);
         merge(arr, si, mid, ei);
     }
     public static void merge(int arr[], int si, int mid, int ei){   
