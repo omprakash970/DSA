@@ -52,6 +52,8 @@ public class LinkedList {
         ll.addFirst(30);
         ll.addLast(40);
         ll.print();
+
+        
         
     }   
 
