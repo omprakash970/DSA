@@ -11,8 +11,13 @@ public class LinkedList {
     }
     public static Node head; 
     public static Node tail; 
+    
+
+
+
+
     public static void main(String[] args) {
-     intro ll=new intro();
+     LinkedList ll=new LinkedList();
         ll.head =new Node(1);
         ll.head.next=new Node(2);
         ll.head.next.next=new Node(3);
