@@ -1,4 +1,4 @@
-class reverse {
+public class reverse {
     class Node{
         int data; 
         Node next; 
@@ -7,7 +7,7 @@ class reverse {
             this.next=null; 
         }
     }
-    public Node head;
+ public Node head=null;
    public void reverseList(){
     Node prev=null; 
     Node curr=head; 
@@ -29,7 +29,7 @@ class reverse {
         ll.head.next.next.next=ll.new Node(4);
         ll.head.next.next.next.next=ll.new Node(5);
 
-        ll.reverse();
+        ll.reverseList();
         Node temp=ll.head; 
         while(temp!=null){
             System.out.print(temp.data+" ");
