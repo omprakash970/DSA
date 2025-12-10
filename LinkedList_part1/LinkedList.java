@@ -58,9 +58,12 @@ public class LinkedList {
         temp.next=newNode;
 
 
-    }
-    
 
+    }
+
+    public void palindrome(){
+        
+    }
     public static void main(String[] args) {
      LinkedList ll=new LinkedList();
         ll.addFirst(10);
