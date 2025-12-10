@@ -8,7 +8,7 @@ class reverse {
         }
     }
     public Node head;
-   public void reverse(){
+   public void reverseList(){
     Node prev=null; 
     Node curr=head; 
     Node next; 
