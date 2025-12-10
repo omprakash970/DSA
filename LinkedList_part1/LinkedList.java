@@ -70,10 +70,17 @@ public class LinkedList {
         }
         return slow; 
     }
+    public boolean checkPalindrome(){
+        //step-1: find middle 
+        Node mid=FindMid(head);
+        //step-2: reverse 2nd half 
+        //step-3: compare both halves
+
+    }
 
 
 
-    
+
     public static void main(String[] args) {
      LinkedList ll=new LinkedList();
         ll.addFirst(10);
