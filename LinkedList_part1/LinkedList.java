@@ -74,8 +74,27 @@ public class LinkedList {
         //step-1: find middle 
         Node mid=FindMid(head);
         //step-2: reverse 2nd half 
+        Node prev =null; 
+        Node curr=mid;
+        Node next; 
+        while(curr!=null){
+            next=curr.next; 
+            curr.next=prev; 
+            prev=curr; 
+            curr=next;
+        }
         //step-3: compare both halves
+        Node right =prev; 
+        Node left=head; 
+        while(right!=null){
+            if(left.data!=right.data){
+                return false; 
+            }
+            left=left.next;
+            right=right.next;
+        }
 
+        return true;
     }
 
 
