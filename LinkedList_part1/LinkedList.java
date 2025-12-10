@@ -61,8 +61,15 @@ public class LinkedList {
 
     }
 
-    public void palindrome(){
-        
+    public void palindrome(Node head){
+        Node slow =head; 
+        Node fast =head; 
+        while(fast!=null&&fast.next!=null){
+            slow=slow.next; 
+            fast=fast.next.next;
+        }
+
+
     }
     public static void main(String[] args) {
      LinkedList ll=new LinkedList();
