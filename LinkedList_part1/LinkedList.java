@@ -61,13 +61,14 @@ public class LinkedList {
 
     }
 
-    public void palindrome(Node head){
+    public Node palindrome(Node head){
         Node slow =head; 
         Node fast =head; 
         while(fast!=null&&fast.next!=null){
             slow=slow.next; 
             fast=fast.next.next;
         }
+
         return slow; 
 
 
