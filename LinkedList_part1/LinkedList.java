@@ -100,6 +100,12 @@ public class LinkedList {
 
  //floyd's cycle detection algorithm
     public Node mergeSort(Node head){
+        //base case
+        if(head==null || head.next==null){
+            return head; 
+        }   
+
+
         //find mid 
         Node mid=FindMid(head); 
         //left & right MS
