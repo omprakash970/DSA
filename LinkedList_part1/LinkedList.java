@@ -99,7 +99,13 @@ public class LinkedList {
     }
 
  //floyd's cycle detection algorithm
-  
+    public Node mergeSort(Node head){
+        //find mid 
+
+        //left & right MS
+
+        //Merge
+    }
 
 
 
