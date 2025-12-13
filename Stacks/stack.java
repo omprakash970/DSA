@@ -8,6 +8,9 @@ public class stack {
         public boolen isEmpty(){
             return list.size()==0;
         }
+        public void push(int data){
+            list.add(data); 
+        }
     }
     
 }
