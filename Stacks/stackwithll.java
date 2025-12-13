@@ -23,6 +23,14 @@ public class stackwithll {
             newNode.next=head; 
             head=newNode;
         }
+        public static int pop(){
+            if(isEmpty()){
+                return -1; 
+            }
+            int top=head.data;
+            head=head.next;
+            return top;
+        }
     }
     
 }
