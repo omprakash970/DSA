@@ -12,7 +12,10 @@ public class activityselection {
         int lastEnd=end[0];
         for(int i=1;i<end.length;i++){
             if(start[i]>=lastEnd){
-                
+                maxAct++; 
+                ans.add(i); 
+                lastEnd=end[i];
+
             }
         }
 
