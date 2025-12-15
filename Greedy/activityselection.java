@@ -18,6 +18,7 @@ public class activityselection {
 
             }
         }
+        System.err.println("Maximum Activities: " + maxAct);
 
     }
     
