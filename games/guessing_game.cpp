@@ -1,13 +1,28 @@
-#include<iostream>
-using namespace std; 
-int main(){
-    cout<<"Enter a number between 1 and 100: ";
-    int number; 
-    cin>>number;
-    if(number<1 || number>100){
-        cout<<"Invalid input! Please enter a number between 1 and 100."<<endl;
-    } else {
-        cout<<"You entered: "<<number<<endl;
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main() {
+    cout << "Welcome to the guessing game!" << endl;
+    
+    srand(time(0));
+    int number = rand() % 100 + 1;
+    int guess, attempts = 0;
+    
+    while (cin >> guess) {
+        attempts++;
+        
+        if (guess < number) {
+            cout << "Too low! Try again." << endl;
+        } else if (guess > number) {
+            cout << "Too high! Try again." << endl;
+        } else {
+            cout << "Congratulations! You guessed " << number 
+                 << " in " << attempts << " attempts." << endl;
+            break;
+        }
     }
+    
     return 0;
 }
