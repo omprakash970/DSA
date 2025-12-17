@@ -5,6 +5,12 @@ import java.util.Scanner;
 
 
 public class io {
+    public static int getshortestLength(String path){
+        int x=0, y=0; 
+        for(int i=0;i<path.length(); i++){
+
+        }
+    }
 
     public static boolean  isPalindrome(String str){
         int n=str.length(); 
