@@ -5,6 +5,19 @@ import java.util.Scanner;
 
 
 public class io {
+
+    public static boolean  isPalindrome(String str){
+        int n=str.length(); 
+        for(int i =0;i<n/2;i++){
+            if(str.charAt(i)==str.charAt(n-i-1)){
+                continue; 
+            }
+            else{
+                return false; 
+            }
+        }
+        return true;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String name; 
@@ -21,6 +34,8 @@ public class io {
         String name1="Om Prakash Bandi";
         char First_char=name1.charAt(0); 
         System.out.println(First_char);
+        //check if it is a palindrome 
+        
     }
     
 }
