@@ -57,8 +57,7 @@ public class io {
    //substring
         String substr=name1.substring(4,10);
         System.out.println(substr);
-        System.out.println("Ehllow world")
-        
+               
     }
     
 }
