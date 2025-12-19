@@ -8,10 +8,24 @@ public class io {
     public static int getshortestLength(String path){
         int x=0, y=0; 
         for(int i=0;i<path.length(); i++){
+            char dir=path.charAt(i); 
+            if(dir=='N'){
+                y++; 
+            }
+            else if(dir=='S'){
+                y--; 
+            }
+            else if(dir=='E'){
+                x++; 
+            }
+            else{
+                x--; 
+            }       
 
         }
+        return Math.abs(x)+Math.abs(y);
     }
-
+         //check if it is a palindrome 
     public static boolean  isPalindrome(String str){
         int n=str.length(); 
         for(int i =0;i<n/2;i++){
@@ -40,7 +54,10 @@ public class io {
         String name1="Om Prakash Bandi";
         char First_char=name1.charAt(0); 
         System.out.println(First_char);
-        //check if it is a palindrome 
+   //substring
+        String substr=name1.substring(4,10);
+        System.out.println(substr);
+        System.out.println("Ehllow world")
         
     }
     
