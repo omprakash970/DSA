@@ -55,6 +55,8 @@ public class io {
         char First_char=name1.charAt(0); 
         System.out.println(First_char);
    //substring
+
+   //
         String substr=name1.substring(4,10);
         System.out.println(substr);
                
