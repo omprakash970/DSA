@@ -40,7 +40,7 @@ public class zigzagll {
        Node left=head; 
        Node right=prev; 
        Node nextL, nextR; 
-       
+        
 
         //alt merge-zigzag merge
         while(next!=null && right!=null){
@@ -51,7 +51,7 @@ public class zigzagll {
 
             left=nextL; 
             right=nextR;
-            
+
         }
     }
 
