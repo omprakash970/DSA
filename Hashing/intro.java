@@ -11,7 +11,13 @@ public class intro {
         Hm.put("India", 130);
         Hm.put("China", 150);
         Hm.put("USA", 40);
-        System.out.println(Hm);
+        int population=Hm.get("India");
+        System.out.println(population);
+        System.out.println(Hm.get("China"));
+        System.out.println(Hm.containsKey("India"));
+        Hm.remove("USA");
+        System.out.print(Hm);
+
     }
     
 }
