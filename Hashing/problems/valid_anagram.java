@@ -1,24 +1,30 @@
 package problems;
 
+import java.util.HashMap;
+
 public class valid_anagram {
-    static boolean valid anagram(String s1, string s2){
-        if(s1.length() != s2.length()){
-            return false;
+    public static boolean isAnagram(String s, String t){
+        HashMap<Character, Integer> Map = new HashMap<>();
+        for(int i=0;i<s.length();i++){
+            char ch=s.charAt(i);
+            Map.put(ch, Map.getOrDefault(ch, 0)+1);
+
+
         }
-        int freq[] = new int[26];
-        for(int i=0;i<s1.length();i++){
-            freq[s1.charAt(i) - 'a']++;
-            freq[s2.charAt(i) - 'a']--;
-        }
-        for(int count : freq){
-            if(count != 0){
-                return false;
+        for(int i=0;i<t.length();i++){
+            char ch = t.charAt(i);
+            if(Map.get(ch)!=null){
+                if(Map.get(ch)==1){
+                    Map.remove(ch);
+                }else{
+                    Map.put(ch, Map.get(ch)-1);
+                }else{
+                    return false;
+                }
             }
         }
-        return true;
+        return Map.isEmpty();
     }
-
-
 
     public static void main(String[] args) {
 
