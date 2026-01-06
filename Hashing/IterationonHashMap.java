@@ -10,6 +10,10 @@ public class IterationonHashMap {
     Hm.put("Indonesia", 10);
     Set<String> keys=Hm.keySet();
     System.out.println(keys);
-        
+        for (String k : keys) {
+            System.out.println("key="+k+",value="+Hm.get(k));
+            
+            
+        }
     }
 }
