@@ -1,9 +1,5 @@
 
 import java.util.HashMap;
-
-
-
-
 public class intro {
     public static void main(String[] args){
 
@@ -16,6 +12,8 @@ public class intro {
         System.out.println(Hm.get("China"));
         System.out.println(Hm.containsKey("India"));
         Hm.remove("USA");
+        System.out.println(Hm.size());
+        Hm.clear();
         System.out.print(Hm);
 
     }
