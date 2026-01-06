@@ -8,7 +8,8 @@ public class IterationonHashMap {
     Hm.put("China",150);
     Hm.put("USA", 33);
     Hm.put("Indonesia", 10);
-    
+    Set<String> keys=Hm.keySet();
+    System.out.println(keys);
         
     }
 }
