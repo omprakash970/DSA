@@ -1,28 +1,21 @@
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class longest_subarray_with_sum_zero {
     static int longestSubarrayWithSumZero(int[] arr) {
-        Map<Integer, Integer> firstIndex = new HashMap<>();
-        int sum = 0;
-        int maxLength = 0;
-
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
-
-            if (sum == 0) {
-                maxLength = Math.max(maxLength, i + 1);
-            }
-
-            if (firstIndex.containsKey(sum)) {
-                maxLength = Math.max(maxLength, i - firstIndex.get(sum));
-            } else {
-                firstIndex.put(sum, i);
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int length=0; 
+        int sum=0; 
+        for(int i=0;i<arr.length;i++){
+            sum+=arr[i];
+            if(map.containsKey(sum)){
+                length=Math.max(length, i-map.get(sum));
+            }else{
+                map.put(sum, i);
             }
         }
+        return length;
 
-        return maxLength;
     }
 
     public static void main(String[] args) {
