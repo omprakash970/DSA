@@ -17,7 +17,12 @@ public class levelorder_taversal {
         }
         Queue<Node> q = new LinkedList<>();
         q.add(root);
-        
+        q.add(null);
+        while(!q.isEmpty()){
+            Node currNode = q.remove();
+            
+        }
+
 
     }
 }
