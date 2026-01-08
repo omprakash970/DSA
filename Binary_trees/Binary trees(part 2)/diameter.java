@@ -17,7 +17,7 @@ public class diameter {
         int leftSum=diameter(root.left); 
         int rightSum=diameter(root.right);
         int selfDiameter=leftSum+rightSum+1;
-        return Math.max(leftSum, Math.max(rightSum, selfDiameter));
+        return Math.max(selfDiameter, Math.max(leftSum, rightSum));
     }
     public static void main(String[] args){
         System.out.println("Diameter of binary tree");
