@@ -16,11 +16,7 @@ int main()
         cout << "You have " << (maxAttempts - attempts) << " attempts left." << endl;
         cout << "Enter your guess: ";
         cin >> guess;
-
-
         bool correctGuess = false;
-
-        
         for (size_t i = 0; i < word.length(); i++) {
             if (word[i] == guess) {
                 guessedWord[i] = guess; 
