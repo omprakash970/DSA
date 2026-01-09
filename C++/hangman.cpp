@@ -6,7 +6,7 @@ int main()
     string word = "hangman";
     string guessedWord(word.length(), '_');
     int maxAttempts = 6;
-    int attempts = 0; // Current number of incorrect attempts
+    int attempts = 0; 
     char guess; 
 
     cout << "Welcome to Hangman!" << endl;
@@ -17,7 +17,10 @@ int main()
         cout << "Enter your guess: ";
         cin >> guess;
 
+
         bool correctGuess = false;
+
+        
         for (size_t i = 0; i < word.length(); i++) {
             if (word[i] == guess) {
                 guessedWord[i] = guess; 
