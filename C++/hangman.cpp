@@ -10,6 +10,7 @@ int main()
     char guess; 
 
     cout << "Welcome to Hangman!" << endl;
+    cout << "You have to guess the word: " << guessedWord << endl;
 
     while (attempts < maxAttempts && guessedWord != word) {
         cout << "Current word: " << guessedWord << endl;
