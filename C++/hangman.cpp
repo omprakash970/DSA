@@ -8,7 +8,7 @@ int main()
     int maxAttempts = 6;
     int attempts = 0; 
     char guess; 
-
+//cout<<"Just a comment line "
     cout << "Welcome to Hangman!" << endl;
     cout << "You have to guess the word: " << guessedWord << endl;
 
