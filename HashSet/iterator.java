@@ -1,7 +1,6 @@
 
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.*; 
 
 public class iterator {
 
@@ -12,7 +11,7 @@ public class iterator {
         set.add("China");
         set.add("USA");
         set.add("Indonesia");
-        Iterator it = set.iterator();
+        Iterator<String> it = set.iterator();
         while(it.hasNext()) { 
             System.out.println(it.next());
         }
