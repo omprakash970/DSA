@@ -28,9 +28,9 @@ bool isValidMove(const Board &b, int pos) {
 
 bool hasWinner(const Board &b, char player) {
     static const int wins[8][3] = {
-        {0, 1, 2}, {3, 4, 5}, {6, 7, 8}, // rows
-        {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, // cols
-        {0, 4, 8}, {2, 4, 6}             // diagonals
+        {0, 1, 2}, {3, 4, 5}, {6, 7, 8}, 
+        {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, 
+        {0, 4, 8}, {2, 4, 6}             
     };
     for (auto &w : wins) {
         if (b[w[0]] == player && b[w[1]] == player && b[w[2]] == player) return true;
@@ -112,27 +112,5 @@ int main() {
         playGame();
     } while (askReplay());
     std::cout << "\nThanks for playing!\n";
-    return 0;
-}
-#include<iostream>
-using namespace std;
-//create a tic-tac-toe board using 2D array
-//with 2v2 random numbers robo playing
-
-int main(){
-    char board[3][3] = {
-        {'1', '2', '3'},
-        {'4', '5', '6'},
-        {'7', '8', '9'}
-    };
-
-    cout << "Tic-Tac-Toe Board:" << endl;
-    for(int i = 0; i < 3; i++){
-        for(int j = 0; j < 3; j++){
-            cout << board[i][j] << " ";
-        }
-        cout << endl;
-    }
-
     return 0;
 }

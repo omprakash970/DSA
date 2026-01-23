@@ -5,10 +5,12 @@ public class queue {
         int arr[]; 
         int size; 
         int rear;
+        int front; 
         Queue(int n){
             arr= new int[n];
              size=n; 
              rear=-1;
+             front=0;
         }
         public static boolean isEmpty(Queue q){
             return q.rear==-1; 
