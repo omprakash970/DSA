@@ -5,34 +5,61 @@ public class queue {
         int arr[]; 
         int size; 
         int rear;
+
+        int newvariable; 
         int front; 
         Queue(int n){
             arr= new int[n];
              size=n; 
              rear=-1;
-             front=0;
+             front=-1;
         }
-        public static boolean isEmpty(Queue q){
-            return q.rear==-1; 
+        public boolean isEmpty(){
+            return rear == -1 && front == -1;
         }
-        public static void add(Queue q, int data){
-            if(q.rear==q.size-1){
-                System.out.println("Queue is full"); 
-                return; 
-            }
-            q.rear++;
-            q.arr[q.rear]=data;
+
+        public boolean isFull(){
+            return (rear + 1) % size == front;
         }
-        public static void remove(Queue q){
-            if(q.isEmpty(q)){
-                System.out.println("Queue is empty"); 
-                return; 
+
+        public void add(int data){
+            if (isFull()){
+                System.out.println("Queue is full");
+                return;
             }
-            for(int i=0;i<q.rear;i++){
-                q.arr[i]=q.arr[i+1]; 
+            if (isEmpty()){
+                front = 0;
+                rear = 0;
+            } else {
+                rear = (rear + 1) % size;
             }
+            arr[rear] = data;
+        }
+
+        public int remove(){
+            if (isEmpty()){
+                System.out.println("Queue is empty");
+                return -1;
+            }
+            int val = arr[front];
+            if (front == rear){
+                // queue becomes empty after removal
+                front = -1;
+                rear = -1;
+            } else {
+                front = (front + 1) % size;
+            }
+            return val;
+        }
+
+        public int peek(){
+            if (isEmpty()){
+                System.out.println("Queue is empty");
+                return -1;
+            }
+            return arr[front];
+        }
         }
 
     }
     
-}
