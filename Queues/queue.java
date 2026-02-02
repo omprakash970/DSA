@@ -6,7 +6,7 @@ public class queue {
         int size; 
         int rear;
 
-        int newvariable; 
+      
         int front; 
         Queue(int n){
             arr= new int[n];
