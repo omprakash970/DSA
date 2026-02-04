@@ -1,1 +1,16 @@
-//
+String hql ="from student"; 
+Query q = session.createQuery(hql);
+List<Student>list = q.list(); 
+String hql="select name, age from student"; 
+Query q = session.createQuery(hql); 
+List<Object[]>list = q.list();
+//Paramaters in hql
+Positional parameters: 
+Query q = session.createQuery("from student where id=?1")
+q.setParameters(1, 101);
+Query q = session.createQuery("from student where id=?2")
+q.setParameter(2, 101);
+q.executeUpdate(); 
+Query q = session.createQuery("delete from student where id=?1");
+q.setParamter(1, 101);
+q.executeUpdate();
