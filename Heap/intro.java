@@ -11,8 +11,10 @@ public class intro {
         pq.add(7); 
         while(!pq.isEmpty()){
             System.out.println(pq.peek());
+            
             pq.remove();
         }
+
     }
 }
     
