@@ -3,6 +3,9 @@ package Arrays;
 public class binarysearch {
 
 
+    
+
+
     public static int binarySearch(int[] arr, int target) {
         int left=0; 
         int right=arr.length-1;
@@ -11,7 +14,6 @@ public class binarysearch {
             if(arr[mid]==target){
                 return mid; 
             }
-if
 
             else if(arr[mid]<target){
                 left=mid+1;
