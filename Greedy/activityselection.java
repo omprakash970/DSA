@@ -9,6 +9,7 @@ public class activityselection {
         ArrayList<Integer> ans = new ArrayList<>();
         maxAct=1;
         ans.add(0); 
+
         int lastEnd=end[0];
         for(int i=1;i<end.length;i++){
             if(start[i]>=lastEnd){
@@ -19,7 +20,7 @@ public class activityselection {
             }
         }
         System.err.println("Maximum Activities: " + maxAct);
-
+//this is commit 
     }
     
 }
