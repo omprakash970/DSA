@@ -16,7 +16,7 @@ int main(){
             if(!inv.empty()){
                 inv.pop_back();
             }
-
+#random 2:00AM commit
         }else if(choice==3){
             for(const auto& item: inv){
                 cout<<item<<endl;
