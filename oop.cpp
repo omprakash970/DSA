@@ -14,8 +14,8 @@ class Dog: public Animal{
 };
 int main(){
     Dog d;
-    d.eat(); // Inherited from Animal
-    d.bark(); // Dog's own method
+    d.eat(); 
+    d.bark(); 
     return 0;
 }
 
