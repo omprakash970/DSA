@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>First Full Stack</title>
+</head>
+<body>
+
+<h2>My First Java Full Stack Project 🚀</h2>
+
+<button onclick="loadMessage()">Call Backend</button>
+<p id="output"></p>
+
+<script>
+function loadMessage() {
+  fetch("http://localhost:8080/api/hello")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("output").innerText = data;
+    });
+}
+</script>
+
+</body>
+</html>

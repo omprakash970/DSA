@@ -12,13 +12,6 @@ class Dog: public Animal{
         cout<<"Dog barks"<<endl;
     }
 };
-int main(){
-    Dog d;
-    d.eat(); 
-    d.bark(); 
-    return 0;
-}
-
 class Vehicle {
     public:
     void start() {
@@ -34,8 +27,12 @@ class Car : public Vehicle {
 };
 
 int main(){
+    Dog d;
+    d.eat(); 
+    d.bark(); 
+    
     Car myCar;
-    myCar.start();      // Inherited from Vehicle
-    myCar.openTrunk();  // Car's own method
+    myCar.start();      
+    myCar.openTrunk();  
     return 0;
 }
