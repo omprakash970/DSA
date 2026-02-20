@@ -1,0 +1,1 @@
+int computer_choice=rand()%3;
