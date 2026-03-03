@@ -44,5 +44,9 @@ public:
     }
 };
 void inorder(Node*node){
-    
+    if(!node) return; 
+    inorder(node->left); 
+    cout<<node->data<<" ";
+    inorder(node->right);
+
 }
