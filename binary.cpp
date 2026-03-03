@@ -50,3 +50,23 @@ void inorder(Node*node){
     inorder(node->right);
 
 }
+
+void preorder(Node*node){
+    if(!node) return; 
+    cout<<node->data<<" ";
+    preorder(node->left); 
+    preorder(node->right);
+}
+void postorder(Node*node){
+    if(!node) return; 
+    postorder(node->left);
+    postorder(node->right);
+    cout<<node->data<<" ";
+}
+void levelOrder(Node* node){
+    if(!node) return; 
+    queue<Node*>q; 
+    q.push(node); 
+    
+
+}
