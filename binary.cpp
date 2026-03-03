@@ -1,5 +1,6 @@
 //write a binary tree class in c++
 #include <iostream>
+#include <queue>
 using namespace std;
 class Node {
 public:
@@ -67,6 +68,8 @@ void levelOrder(Node* node){
     if(!node) return; 
     queue<Node*>q; 
     q.push(node); 
-    
+    while(!q.empty()){
+        
+    }
 
 }
