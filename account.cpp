@@ -26,3 +26,15 @@ public:
         cout << "Balance: $" << balance << endl;
     }
 };
+int main(){
+    Account acc1("John Doe", 123456, 1000.0);
+    acc1.display();
+    acc1.deposit(500.0);
+    cout << "After deposit:" << endl;
+    acc1.display();
+    acc1.withdraw(200.0);
+    cout << "After withdrawal:" << endl;
+    acc1.display();
+    acc1.withdraw(1500.0); 
+    return 0;
+}
