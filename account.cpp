@@ -1,40 +1,22 @@
+//write a cpp program to overload a method, write a method subtract to work with two parameters and three parameters
 #include <iostream>
 using namespace std;
 class Account {
 public:
-    string name;
-    int accountNumber;
-    double balance;
-    Account(string n, int accNum, double bal) {
-        name = n;
-        accountNumber = accNum;
-        balance = bal;
+    double result;
+    Account(double ans) {
+        result = ans;
     }
-    void deposit(double amount) {
-        balance += amount;
+    double subtract(double a, double b) {
+        return result - a - b;
     }
-    void withdraw(double amount) {
-        if (amount > balance) {
-            cout << "Insufficient funds" << endl;
-        } else {
-            balance -= amount;
-        }
-    }
-    void display() {
-        cout << "Name: " << name << endl;
-        cout << "Account Number: " << accountNumber << endl;
-        cout << "Balance: $" << balance << endl;
+    double subtract(double a, double b, double c) {
+        return result - a - b - c;
     }
 };
-int main(){
-    Account acc1("John Doe", 123456, 1000.0);
-    acc1.display();
-    acc1.deposit(500.0);
-    cout << "After deposit:" << endl;
-    acc1.display();
-    acc1.withdraw(200.0);
-    cout << "After withdrawal:" << endl;
-    acc1.display();
-    acc1.withdraw(1500.0); 
+int main() {
+    Account myAccount(1000.0);
+    cout << "Balance after subtracting 200 and 300: " << myAccount.subtract(200.0, 300.0) << endl;
+    cout << "Balance after subtracting 150: " << myAccount.subtract(150.0, 0.0, 0.0) << endl;
     return 0;
 }
