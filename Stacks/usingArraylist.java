@@ -18,5 +18,9 @@ class usingArrayList{
             }
             return list.remove(list.size()-1);
         }
+        public int peek(){
+            int top=list.get(list.size()-1);
+            return top;
+        }
 }
 
