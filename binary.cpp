@@ -77,3 +77,16 @@ void levelOrder(Node* node){
     }
 
 }
+int height(Node* node){
+    if(!node) return 0;
+   return 1+max(height(node->left), height(node->right));
+}
+int dfs(Node*node){
+    if(!node) return 0; 
+    int left=dfs(node->left); 
+    int right=dfs(node->right);
+    return max(left, right)+1;
+
+
+}
+Node* LCA(Node*node, Node*p, )
