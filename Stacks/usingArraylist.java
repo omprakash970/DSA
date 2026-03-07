@@ -8,5 +8,15 @@ class usingArrayList{
         public boolean isEmpty(){
             return list.isEmpty();
         }
-        
+        public  void push(int data){
+            list.add(data);
+        }
+        public int pop(){
+            if(isEmpty()){
+                System.out.println("Stack is empty");
+                return -1;
+            }
+            return list.remove(list.size()-1);
+        }
 }
+
