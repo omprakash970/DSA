@@ -18,6 +18,7 @@ public class Indiancoins {
             }
             if (amount == 0) break;
         }
+        //commit 
 
         System.out.println("Used coins: " + usedCoins);
         System.out.println("Total coins: " + count);
