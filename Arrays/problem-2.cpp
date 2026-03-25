@@ -2,6 +2,7 @@
 #include<iostream>
 #include<unordered_map>
 #include<vector>
+#include<algorithm>
 using namespace std;
 class Solution{
     public:
@@ -22,3 +23,9 @@ class Solution{
         return true;
     }
     };
+int main(){
+    Solution s;
+    s.isPermuation("abc", "bca")? cout<<"Yes\n": cout<<"No\n";
+    return 0;
+
+}
