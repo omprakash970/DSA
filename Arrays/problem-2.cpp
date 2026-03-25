@@ -12,7 +12,7 @@ class Solution{
             m[s[i]]++; 
         }
        for(int j=0;j<t.size();j++){
-        if(s.find(t[j])==s.end()){
+        if(m.find(t[j])==m.end()){
             return false; 
         }
         m[t[j]]--;
@@ -26,6 +26,7 @@ class Solution{
 int main(){
     Solution s;
     s.isPermuation("abc", "bca")? cout<<"Yes\n": cout<<"No\n";
+     s.isPermuation("abc", "bda")? cout<<"Yes\n": cout<<"No\n";
     return 0;
 
 }
