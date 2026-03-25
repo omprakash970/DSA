@@ -2,7 +2,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int main(){
+
     class Solution{
         public: 
         void replaceSpaces(string &s, int truelength){
